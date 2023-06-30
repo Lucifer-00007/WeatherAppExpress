@@ -1,0 +1,15 @@
+{
+  "name": "weatherappexpress",
+  "version": "1.0.0",
+  "description": "Osm Weather web-app!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Lucifer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0"
+  }
+}
