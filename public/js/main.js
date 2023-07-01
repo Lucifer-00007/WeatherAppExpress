@@ -1,4 +1,3 @@
-const appID = '7e45cc279f5780f859a01df53977590d';
 const submitBtn = document.getElementById('submitBtn');
 const cityName = document.getElementById('cityName');
 const city_name = document.getElementById('city_name');
@@ -15,7 +14,8 @@ const getInfo = async (event) => {
         datahide.classList.add('data_hide');
     } else {
         try {
-            let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=${appID}`
+            // let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=${appID}`
+            let url = `https://weather-api-4t9t.onrender.com/${cityVal}`
             const response = await fetch(url);
             const data = await response.json();
             const arrData = [data]
